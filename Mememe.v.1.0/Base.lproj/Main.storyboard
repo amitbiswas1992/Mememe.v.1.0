@@ -7,17 +7,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="pqq-pJ-cF8">
             <objects>
-                <viewController id="FM4-7h-968" sceneMemberID="viewController">
+                <viewController id="FM4-7h-968" userLabel="Image View Controller" customClass="ImageViewController" customModule="Mememe_v_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCe-q1-Os3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rLZ-PU-gdi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rLZ-PU-gdi" firstAttribute="top" secondItem="aeZ-eN-3K8" secondAttribute="top" id="0kO-32-irH"/>
+                            <constraint firstItem="aeZ-eN-3K8" firstAttribute="bottom" secondItem="rLZ-PU-gdi" secondAttribute="bottom" id="B3h-pz-NtC"/>
+                            <constraint firstItem="rLZ-PU-gdi" firstAttribute="leading" secondItem="aeZ-eN-3K8" secondAttribute="leading" id="Kno-xp-nVC"/>
+                            <constraint firstItem="aeZ-eN-3K8" firstAttribute="trailing" secondItem="rLZ-PU-gdi" secondAttribute="trailing" id="lae-dW-d48"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aeZ-eN-3K8"/>
                     </view>
                     <navigationItem key="navigationItem" id="nZz-9w-6iB"/>
+                    <connections>
+                        <outlet property="imageView" destination="rLZ-PU-gdi" id="KOh-0N-6BG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fc-kB-4rr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
