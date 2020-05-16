@@ -1,78 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3L-Ry-Erh">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xyj-NH-UQu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image View Controller-->
-        <scene sceneID="pqq-pJ-cF8">
+        <!--Meme Me View Controller-->
+        <scene sceneID="N6e-G2-FiA">
             <objects>
-                <viewController id="FM4-7h-968" userLabel="Image View Controller" customClass="ImageViewController" customModule="Mememe_v_1_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OCe-q1-Os3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="fnH-cJ-DRp" customClass="MemeMeViewController" customModule="Mememe_v_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSB-YH-geJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rLZ-PU-gdi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-9f-yVT">
+                                <rect key="frame" x="0.0" y="44" width="375" height="547"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-nv-04N" userLabel="Bottom Toolbar">
+                                <rect key="frame" x="0.0" y="579" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7sV-0a-jSW"/>
+                                    <barButtonItem image="camera" catalog="system" id="iwK-I2-FiB" userLabel="Camera"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zDu-0O-q6Q"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sld-9s-lz8"/>
+                                    <barButtonItem title="Album" id="DvS-1Q-5ri" userLabel="Album"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="27C-Et-zu7"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rLZ-PU-gdi" firstAttribute="top" secondItem="aeZ-eN-3K8" secondAttribute="top" id="0kO-32-irH"/>
-                            <constraint firstItem="aeZ-eN-3K8" firstAttribute="bottom" secondItem="rLZ-PU-gdi" secondAttribute="bottom" id="B3h-pz-NtC"/>
-                            <constraint firstItem="rLZ-PU-gdi" firstAttribute="leading" secondItem="aeZ-eN-3K8" secondAttribute="leading" id="Kno-xp-nVC"/>
-                            <constraint firstItem="aeZ-eN-3K8" firstAttribute="trailing" secondItem="rLZ-PU-gdi" secondAttribute="trailing" id="lae-dW-d48"/>
+                            <constraint firstItem="XN0-9f-yVT" firstAttribute="leading" secondItem="dAy-zj-mqX" secondAttribute="leading" id="YDo-18-3m7"/>
+                            <constraint firstItem="XN0-9f-yVT" firstAttribute="top" secondItem="dAy-zj-mqX" secondAttribute="top" id="eu7-dw-i4H"/>
+                            <constraint firstAttribute="bottom" secondItem="XN0-9f-yVT" secondAttribute="bottom" constant="76" id="h16-jY-Xw0"/>
+                            <constraint firstItem="dAy-zj-mqX" firstAttribute="trailing" secondItem="XN0-9f-yVT" secondAttribute="trailing" id="ywG-Gn-aTI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aeZ-eN-3K8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nZz-9w-6iB"/>
-                    <connections>
-                        <outlet property="imageView" destination="rLZ-PU-gdi" id="KOh-0N-6BG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5fc-kB-4rr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="392.75362318840581" y="217.63392857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="N6e-G2-FiA">
-            <objects>
-                <viewController id="fnH-cJ-DRp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bSB-YH-geJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dAy-zj-mqX"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="EDs-sm-zzW">
-                        <barButtonItem key="leftBarButtonItem" image="square.and.arrow.up" catalog="system" id="Iht-mN-eoD"/>
+                        <barButtonItem key="leftBarButtonItem" image="square.and.arrow.up" catalog="system" id="Iht-mN-eoD" userLabel="Share Button"/>
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="5Ws-hO-0Zr"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomToolbar" destination="Opr-nv-04N" id="TR3-Qk-81y"/>
+                        <outlet property="cameraButton" destination="iwK-I2-FiB" id="mvh-dj-mj8"/>
+                        <outlet property="imageView" destination="XN0-9f-yVT" id="Adq-gf-JVj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iS-Nc-mkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392.75362318840581" y="-430.58035714285711"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="zk6-JJ-r6K">
-            <objects>
-                <tabBarController id="K3L-Ry-Erh" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lKR-Gz-laS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Xyj-NH-UQu" kind="relationship" relationship="viewControllers" id="hRD-Vm-jux"/>
-                        <segue destination="9Rb-fV-YLx" kind="relationship" relationship="viewControllers" id="qkm-8E-rn4"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WXS-CP-zpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1432" y="-106"/>
+            <point key="canvasLocation" x="266" y="-431"/>
         </scene>
         <!--Camera-->
         <scene sceneID="NRD-2P-QqG">
@@ -81,7 +63,7 @@
                     <tabBarItem key="tabBarItem" title="Camera" image="camera.fill" catalog="system" id="ZqZ-zj-QdM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OAq-IP-sXw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -93,29 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-517.39130434782612" y="-430.58035714285711"/>
         </scene>
-        <!--Album-->
-        <scene sceneID="Znh-Pi-J9R">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Rb-fV-YLx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Album" image="photo" catalog="system" id="F2C-Yz-09x"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="scy-RQ-hzE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="FM4-7h-968" kind="relationship" relationship="rootViewController" id="xeG-6H-Eii"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bR3-js-Aa2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-517.39130434782612" y="217.63392857142856"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="96"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>
