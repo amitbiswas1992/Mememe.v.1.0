@@ -42,8 +42,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="EDs-sm-zzW">
-                        <barButtonItem key="leftBarButtonItem" image="square.and.arrow.up" catalog="system" id="Iht-mN-eoD" userLabel="Share Button"/>
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="5Ws-hO-0Zr"/>
+                        <barButtonItem key="leftBarButtonItem" image="square.and.arrow.up" catalog="system" id="Iht-mN-eoD" userLabel="Share Button">
+                            <connections>
+                                <action selector="shareButton:" destination="fnH-cJ-DRp" id="Qge-FG-xS7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="5Ws-hO-0Zr">
+                            <connections>
+                                <action selector="cancelButton:" destination="fnH-cJ-DRp" id="RdN-AS-0BU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

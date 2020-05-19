@@ -14,11 +14,19 @@ class MemeMeViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet var cameraButton: UIBarButtonItem!
     @IBOutlet var bottomToolbar: UIToolbar!
     
+  
     @IBOutlet var topTextField: UITextField!
     @IBOutlet var bottomTextField: UITextField!
     
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    @IBAction func shareButton(_ sender: Any) {
+      }
+    
+    
+    @IBAction func cancelButton(_ sender: Any) {
     }
     
     override func viewDidLoad() {
